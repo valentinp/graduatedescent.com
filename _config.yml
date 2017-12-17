@@ -1,28 +1,52 @@
-# Dependencies
-markdown:         redcarpet
-highlighter:      pygments
-
-# Permalinks
-permalink:        pretty
+# Built with Jekyll 3.2.0
 
 # Setup
-title:            Hyde
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://hyde.getpoole.com
-baseurl:          /
+title:               Graduate Descent
+tagline:             'Stochastic thoughts on AI, society, and academia.'
+description:         'GraduateDescent is a blog written by two Ph.D. students in Robotics and Artificial Intelligence.'
+url:                 'http://www.graduatedescent.com'
+baseurl:             ''
 
+# About/contact
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:              Valentin Peretroukhin
+  url:               https://twitter.com/valentinp
+  email:             valentinp@gmail.com
 
-plugins: [jekyll-paginate]
-paginate:         5
-paginate_path: "page:num"
+# Permalinks
 
+# Color scheme. Options: red, orange, magenta, cyan, blue, brown
+color-scheme: 
 
-# Custom vars
-version:          2.1.0
+permalink: pretty
+permalink: /:title/
 
-github: [metadata]
+# Set encoding to UTF-8
+encoding: utf-8
+
+# Collections for texts
+collections:
+  texts:
+    output: true
+
+# Markdown specs
+markdown: kramdown
+
+kramdown:
+  auto_ids:       true
+  footnote_nr:    1
+  entity_output:  as_char
+  footnote_backlink: "&#x21a9;&#xfe0e;"
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Exclusions from the final site
+exclude:
+  - optional
+  - vendor
+
+# Theme
+theme: "ed."
+
 
